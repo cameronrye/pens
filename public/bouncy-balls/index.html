@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bouncy Balls</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <style>
+      body, html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        text-align: center;
+        overflow: hidden;
+        background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+      }
+      h1 {
+        margin: 0;
+        padding: 0;
+        color: #51445F;
+        font-size: 10vmin;
+        font-family: 'Pacifico', cursive;
+	      animation: enter 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      }
+      svg {
+        margin: 10vh 0 0 2vw;
+        height: 60vh;
+        width: 80vw;
+      }
+      .back { 
+        fill: #492d49;
+        animation: bounce .6s ease;
+      }
+      .middle {
+        fill: #87555C;
+        animation: bounce .8s ease;
+      }
+      .top {
+        fill: #D1b68D;
+        animation: bounce 1s ease;
+      }
+      @keyframes enter {
+        0% {
+          letter-spacing: 1em;
+          transform: translateZ(400px) translateY(300px);
+          opacity: 0;
+          }
+          40% {
+            opacity: .6;
+          }
+          100% {
+            transform: translateZ(0) translateY(0);
+            opacity: 1;
+          }
+      }
+      @keyframes bounce {
+        0% {
+          opacity: 0;
+          transform: scale(.3);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+        70% {
+          transform: scale(.9);
+        }
+        100% { 
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 350">
+      <circle cx="375" cy="70"  r="70"  class="back" transform="rotate(-50 375 070)"/>
+      <circle cx="70"  cy="70"  r="70"  class="back" transform="rotate(-40 070 070)"/>
+      <circle cx="135" cy="150" r="85"  class="middle" transform="rotate(-40 135 150)"/>
+      <circle cx="310" cy="150" r="85"  class="middle" transform="rotate(-50 310 150)"/>
+      <circle cx="220" cy="220" r="110" class="top" transform="rotate(-50 220 220)"/>
+    </svg>
+    <h1>Bouncy Balls</h1>
+  </body>
+</html>
