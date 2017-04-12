@@ -5,6 +5,8 @@
 * [Bouncy Balls](https://codepen.io/cameronrye/pen/ZeZGJE)
 
 ## Release History
+* 0.0.2
+    * Frog
 * 0.0.1
     * Bouncy Balls
 
