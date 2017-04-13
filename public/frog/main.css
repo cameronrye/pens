@@ -26,6 +26,9 @@ body{
   width: 100%;
   height: 100%;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: rgb(58,58,58);
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -70,7 +73,6 @@ Frog
 */
 
 svg.frog {
-  width: 100px;
-  height: 100px;
-  background-color: rgb(211, 223, 64);
+  width: 600px;
+  height: 400px;
 }
