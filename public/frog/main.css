@@ -74,9 +74,10 @@ Frog
 
 svg.frog {
   width: 600px;
-  height: 400px;
+  height: 800px;
   stroke-width: 7px;
   stroke: #000;
+  /*background-color: tomato;*/
 }
 
 .face { 
