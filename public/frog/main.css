@@ -75,11 +75,14 @@ Frog
 svg.frog {
   width: 600px;
   height: 400px;
+  stroke-width: 7px;
+  stroke: #000;
 }
 
 .face { 
   fill: #d3df40;
-  stroke: #000;
-  stroke-miterlimit: 10;
-  stroke-width: 7px;
+}
+
+.eye {
+  fill: #fff;
 }
