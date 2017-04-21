@@ -87,3 +87,7 @@ svg.frog {
 .eye {
   fill: #fff;
 }
+.cheek {
+  fill: #f4aab9;
+  stroke-width: 0;
+}
