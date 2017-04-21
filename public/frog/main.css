@@ -91,3 +91,7 @@ svg.frog {
   fill: #f4aab9;
   stroke-width: 0;
 }
+
+.smile {
+  fill: transparent;
+}
